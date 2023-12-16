@@ -1056,4 +1056,23 @@ a{
   }
   
   /* Responsiveness */
-  
+  @media only screen and (max-width: 900px){
+    .search-bar {
+      flex: 1;
+      margin: 0px 20px;
+    }
+
+    .search-bar input {
+      width: 100%;
+    }
+
+    .profile .section .name {
+      display: none;
+    }
+
+
+    .main-header main,
+    .main-header .guide-container {
+      width: 90%;
+    }
+  }
