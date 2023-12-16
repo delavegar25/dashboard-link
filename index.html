@@ -211,11 +211,14 @@
        <main>
         <p>Extend your trial for $1/month for 3 months on select plans.</p>
         <div>
+          <button tabindex="0">
        <a href="https://shopify.com/pricing" target="_blank">
-        Select a plan 
+        <p>Select a plan</p>
        </a>
+       </button>
 
        <svg
+       tabindex="0"
        style="cursor: pointer"
        class="cancel"
        width="20"
@@ -235,6 +238,504 @@
 
 
 <!--container-->
+
+<div class="guide-container">
+    <div class="head">
+      <div>
+        <h4>Setup guide</h4>
+        <p class="description">
+            Use this personalized guide to get your store up and running.
+        </p>
+
+        <!--progress bar-->
+        <div>
+            <p class="progress"><span>0</span> / 5 completed</p>
+            <div class="progress-track">
+              <div class="progress-thumb"></div>
+            </div>
+        </div>
+      </div>
+      <svg
+      class="arrow"
+      width="20"
+      height="20"
+      viewBox="0 0 21 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M15.0303 12.2803C14.7374 12.5732 14.2626 12.5732 13.9697 12.2803L10.5 8.81066L7.03033 12.2803C6.73744 12.5732 6.26256 12.5732 5.96967 12.2803C5.67678 11.9874 5.67678 11.5126 5.96967 11.2197L9.96967 7.21967C10.2626 6.92678 10.7374 6.92678 11.0303 7.21967L15.0303 11.2197C15.3232 11.5126 15.3232 11.9874 15.0303 12.2803Z"
+        fill="#4A4A4A"/>
+    </svg>
+    </div>
+
+
+    <!--The Five Setup Guides -->
+
+    <div class="guides">
+      <div onclick="toggleGuide(0)" class="guide guide1" tabindex="0">
+      <div class="checkbox">
+        <!-- Marked phase -->
+        <svg
+        class="marked"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+        <path
+          d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+          fill="#fff"
+        ></path>
+      </svg>
+      <!-- Loading phase -->
+      <svg
+        class="loading"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11.9996 2C13.9774 2 15.9108 2.58649 17.5553 3.6853C19.1998 4.78412 20.4816 6.3459 21.2384 8.17316C21.9953 10.0004 22.1933 12.0111 21.8075 13.9509C21.4216 15.8907 20.4692 17.6725 19.0707 19.0711C17.6722 20.4696 15.8903 21.422 13.9505 21.8079C12.0107 22.1937 10.0001 21.9957 8.1728 21.2388C6.34554 20.4819 4.78375 19.2002 3.68494 17.5557C2.58612 15.9112 1.99963 13.9778 1.99963 12"
+          stroke="#1C181D"
+          stroke-width="2.08333"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <!-- Hovered phase -->
+      <svg
+        class="hovered"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="#8A8A8A"
+          stroke-width="2.08333"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <!-- Unhovered phase -->
+      <svg
+        class="unhovered"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="#8A8A8A"
+          stroke-width="2.08333"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-dasharray="5 5"
+        />
+      </svg>    
+        </div>
+        <div class="details">
+          <h4>Customize your online store</h4>
+          <p>
+            Choose a theme and add your logo, colors and images to reflect
+            your brand. <a href="#">Learn more</a>
+          </p>
+          <button tabindex="0">Customize theme</button>
+        </div>
+        <img
+        src="https://crushingit.tech/hackathon-assets/customise-store.png"
+        alt="setup guide image"
+      />
+      </div>
+
+      <div onclick="toggleGuide(1)" class="guide guide2" tabindex="0">
+        <div class="checkbox">
+          <!-- Marked phase -->
+          <svg
+          class="marked"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+          <path
+            d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+            fill="#fff"
+          ></path>
+        </svg>
+        <!-- Loading phase -->
+        <svg
+          class="loading"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.9996 2C13.9774 2 15.9108 2.58649 17.5553 3.6853C19.1998 4.78412 20.4816 6.3459 21.2384 8.17316C21.9953 10.0004 22.1933 12.0111 21.8075 13.9509C21.4216 15.8907 20.4692 17.6725 19.0707 19.0711C17.6722 20.4696 15.8903 21.422 13.9505 21.8079C12.0107 22.1937 10.0001 21.9957 8.1728 21.2388C6.34554 20.4819 4.78375 19.2002 3.68494 17.5557C2.58612 15.9112 1.99963 13.9778 1.99963 12"
+            stroke="#1C181D"
+            stroke-width="2.08333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <!-- Hovered phase -->
+        <svg
+          class="hovered"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="#8A8A8A"
+            stroke-width="2.08333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <!-- Unhovered phase -->
+        <svg
+          class="unhovered"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="#8A8A8A"
+            stroke-width="2.08333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-dasharray="5 5"
+          />
+        </svg>    
+          </div>
+          <div class="details">
+            <h4>Add your first product</h4>
+            <p>
+              Write a description, add photos and set pricing for the 
+              products you plan to sell. <a href="#">Learn more</a>
+            </p>
+          <div>
+          <button tabindex="0">Add a product</button>
+          <button
+          style="
+            background-color: transparent;
+            color: #323232;
+            border: none;
+            box-shadow: none;
+            margin-left: 16px;
+          "
+        >
+          Import product
+        </button>
+          </div>
+          </div>
+          <img
+          src="https://crushingit.tech/hackathon-assets/product.png"
+          alt="setup guide image"
+        />
+      </div>
+  
+      <div onclick="toggleGuide(2)" class="guide guide3" tabindex="0">
+        <div class="checkbox">
+          <!-- Marked phase -->
+          <svg
+            class="marked"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+            <path
+              d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+              fill="#fff"
+            ></path>
+          </svg>
+          <!-- Loading phase -->
+          <svg
+            class="loading"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.9996 2C13.9774 2 15.9108 2.58649 17.5553 3.6853C19.1998 4.78412 20.4816 6.3459 21.2384 8.17316C21.9953 10.0004 22.1933 12.0111 21.8075 13.9509C21.4216 15.8907 20.4692 17.6725 19.0707 19.0711C17.6722 20.4696 15.8903 21.422 13.9505 21.8079C12.0107 22.1937 10.0001 21.9957 8.1728 21.2388C6.34554 20.4819 4.78375 19.2002 3.68494 17.5557C2.58612 15.9112 1.99963 13.9778 1.99963 12"
+              stroke="#1C181D"
+              stroke-width="2.08333"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <!-- Hovered phase -->
+          <svg
+            class="hovered"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="#8A8A8A"
+              stroke-width="2.08333"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <!-- Unhovered phase -->
+          <svg
+            class="unhovered"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="#8A8A8A"
+              stroke-width="2.08333"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-dasharray="5 5"
+            />
+          </svg>
+        </div>
+        <div class="details">
+          <h4>Add a custom domain</h4>
+          <p>
+            Your current domain is 222219.myshopify.com but you can add a
+            custom domain to help customers find your online store.
+            <a href="#">Learn more</a>
+          </p>
+          <button>Add domain</button>
+        </div>
+        <img
+          src="https://crushingit.tech/hackathon-assets/website.png"
+          alt="setup guide image"
+        />
+      </div>
+
+      <div onclick="toggleGuide(3)" class="guide guide4" tabindex="0">
+        <div class="checkbox">
+          <!-- Marked phase -->
+          <svg
+            class="marked"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+            <path
+              d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+              fill="#fff"
+            ></path>
+          </svg>
+          <!-- Loading phase -->
+          <svg
+            class="loading"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.9996 2C13.9774 2 15.9108 2.58649 17.5553 3.6853C19.1998 4.78412 20.4816 6.3459 21.2384 8.17316C21.9953 10.0004 22.1933 12.0111 21.8075 13.9509C21.4216 15.8907 20.4692 17.6725 19.0707 19.0711C17.6722 20.4696 15.8903 21.422 13.9505 21.8079C12.0107 22.1937 10.0001 21.9957 8.1728 21.2388C6.34554 20.4819 4.78375 19.2002 3.68494 17.5557C2.58612 15.9112 1.99963 13.9778 1.99963 12"
+              stroke="#1C181D"
+              stroke-width="2.08333"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <!-- Hovered phase -->
+          <svg
+            class="hovered"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="#8A8A8A"
+              stroke-width="2.08333"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <!-- Unhovered phase -->
+          <svg
+            class="unhovered"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="#8A8A8A"
+              stroke-width="2.08333"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-dasharray="5 5"
+            />
+          </svg>
+        </div>
+        <div class="details">
+          <h4>Name your store</h4>
+          <p>
+            Your temporary store name is currently Davii collections. The
+            store name appears in your admin and your online store.
+            <a href="#">Learn more</a>
+          </p>
+          <button>Name store</button>
+        </div>
+        <img
+          src="https://crushingit.tech/hackathon-assets/name-store.png"
+          alt="setup guide image"
+        />
+      </div>
+
+      <div onclick="toggleGuide(4)" class="guide guide5" tabindex="0">
+        <div class="checkbox">
+          <!-- Marked phase -->
+          <svg
+            class="marked"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+            <path
+              d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+              fill="#fff"
+            ></path>
+          </svg>
+          <!-- Loading phase -->
+          <svg
+            class="loading"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.9996 2C13.9774 2 15.9108 2.58649 17.5553 3.6853C19.1998 4.78412 20.4816 6.3459 21.2384 8.17316C21.9953 10.0004 22.1933 12.0111 21.8075 13.9509C21.4216 15.8907 20.4692 17.6725 19.0707 19.0711C17.6722 20.4696 15.8903 21.422 13.9505 21.8079C12.0107 22.1937 10.0001 21.9957 8.1728 21.2388C6.34554 20.4819 4.78375 19.2002 3.68494 17.5557C2.58612 15.9112 1.99963 13.9778 1.99963 12"
+              stroke="#1C181D"
+              stroke-width="2.08333"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <!-- Hovered phase -->
+          <svg
+            class="hovered"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="#8A8A8A"
+              stroke-width="2.08333"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <!-- Unhovered phase -->
+          <svg
+            class="unhovered"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="#8A8A8A"
+              stroke-width="2.08333"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-dasharray="5 5"
+            />
+          </svg>
+        </div>
+        <div class="details">
+          <h4>Set up a payment provider</h4>
+          <p>
+            Choose a payment provider to start accepting payments. You’ll
+            need to create an account with the payment provider and set it
+            up with your Shopify store.
+            <a href="#">Learn more</a>
+          </p>
+          <button>Set up payment</button>
+        </div>
+        <img
+          src="https://crushingit.tech/hackathon-assets/payment.png"
+          alt="setup guide image"
+        />
+      </div>
+    </div>
+  </div>
+
+
+</div>
     
 </body>
 </html>

@@ -564,9 +564,9 @@ a{
 }
 
 .notification-sort:focus{
-  outline: none;
-  border: 1.5px solid #005bd3;
-  border-radius: 4px;
+  background: var(--grey-grey-50, #656266);
+  box-shadow: 0px 0px 0px 3px #005BD3;
+  outline-offset: 1px;
 }
 
 .notification-sort:focus-visible{
@@ -624,7 +624,7 @@ a{
 }
 
 .dropdown .section1 > div:first-child p:first-child {
-  height: 28px;
+  height: 8px;
   border-radius: 6px;
   background: #36fba1;
   padding: 9.625px 5.875px 10.375px 6.125px;
@@ -781,6 +781,16 @@ a{
   line-height: 130%;
 }
 
+.main-header main button p {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.main-header main button{
+  border-radius: 8px;
+}
+
 .main-header main > div a:hover{
   background: #f7f7f7;
 }
@@ -789,3 +799,261 @@ a{
   box-shadow: 0px 0px 0px 3px #005bd3, 0px 0px 0px 1px #fff,
   0px -1px 0px 0px #B5B5B5 inset;  
 }
+
+
+/*guide container */
+.guide-container {
+  margin-top: 16px;
+  width: 800px;
+  padding: 8px;
+  border-radius: 18px;
+  border: 1px solid #dbdbdb;
+  background: #fff;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.guide-container .head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.guide-container .head h4 {
+  color: var(--grey-200);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.guide-container .head .description{
+  color: var(--grey-200);
+  font-size: 13px;
+  line-height: 140%;
+  margin-bottom: 16px;
+}
+
+.guide-container .head > div > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.guide-container .head .progress {
+  color: var(--grey-200);
+  font-size: 12px;
+  line-height: 130%;
+}
+
+.guide-container .head .progress-track {
+  position: relative;
+  width: 72px;
+  height: 4px;
+  border-radius: 28px;
+  background-color: #e3e3e3;
+}
+
+.guide-container .head .progress-thumb {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 28px;
+  background-color: #1A1A1A;
+}
+
+.guide-container .head svg {
+  cursor: pointer;
+  transition: 1s;
+  border-radius: 6px;
+  padding: 2px;
+  box-sizing: content-box;
+}
+
+.guide-container .head svg:hover {
+  background-color: #f3f3f3;
+}
+
+
+.rotateArrow {
+  transform: rotate(180deg);
+}
+
+
+.guide-container .guides {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  height: 360px;
+  transition: all 1s;
+}
+
+.shrink {
+  margin-top: 0px !important;
+  height: 0px !important;
+}
+
+.guide-container .guides .guide {
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+}
+
+.guide-container .guides .guide:focus{
+  outline: none;
+  background-color: #f3f3f3 !important;
+  border: 0px solid transparent;
+}
+
+.guide-container .guides .guide:focus-visible{
+  outline: none;
+  background-color: #f3f3f3 !important;
+  border: 0px solid transparent;
+}
+
+.guide-container .guides .guide.hide{
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.guide-container .guides .guide .checkbox {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.guide-container .guides .guide .checkbox svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #f3f3f3;
+  border-radius: 100%;
+}
+
+.guide-container .guides .guide.hide .checkbox svg{
+  background-color: #f1f1f1;
+}
+
+.guide-container .guides .guide .checkbox .marked {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  transition: all 2s;
+}
+
+.guide-container .guides .guide .checkbox .marked.expand {
+  width: 26px;
+  height: 26px;
+  z-index: 10;
+}
+
+.guide-container .guides .guide .checkbox .loading {
+  animation: circular 2s linear infinite forwards;
+  background-color: transparent;
+}
+
+.arrow:focus {
+  box-shadow: #005BD3;
+}
+
+@keyframes circular {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.guide-container .guides .guide .checkbox:hover .unhovered{
+  display: none !important;
+}
+
+.guide-container .guides .guide .details {
+  width: 484px;
+  margin-left: 10px;
+}
+
+.guide-container .guides .guide .detail h4 {
+  all: unset;
+  color: var(--grey-200);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.guide-container .guides .guide .details p{
+  margin: 16px 0px;
+  color: #616161;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.guide-container .guides .guide.hide .details p{
+  display: none;
+}
+
+.guides-container .guides .guide .details p a {
+  color: #005bd3;
+  font-size: 14px;
+  text-decoration: none;
+  }
+
+  .guides-container .guides .guide .details button {
+  all: unset;
+  
+  padding: 6px 12px;
+  border-radius: 6px;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.2);
+  border-right: 1.5px solid rgba(255, 255, 255, 0.2);
+  border-left: 1.5px solid rgba(255, 255, 255, 0.2);
+  background: #404040;
+  box-shadow: 0px 0px 0px 1.5px #333, 0px 1px 0px 1.5px #333,
+    0px 2px 0px 0px #000;
+  
+  color: #f6f3f6;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  cursor: pointer;
+  }
+
+  .guides-container .guides .guide .details button:hover {
+  background: #2a2a2a;
+  }
+
+  .guides-container .guides .guide .details button:active {
+  background: #2b2b2b;
+  box-shadow: 0px 0px 0px 1.5px #333, 0px 3px 0px 0px #000 inset;
+  }
+
+  .guides-container .guides .guide .details button:focus {
+  background: #404040;
+  box-shadow: 0px 0px 0px 2px #005bd3, 0px 0px 0px 3px #fff,
+    0px 0px 0px 1.5px #333;
+  }
+
+  .guides-container .guides .guide .details button:focus-visible {
+  background: #404040;
+  box-shadow: 0px 0px 0px 2px #005bd3, 0px 0px 0px 3px #fff,
+    0px 0px 0px 1.5px #333;
+  }
+  .guides-container .guides .guide.hide .details button {
+  display: none;
+  }
+  .guides-container .guides .guide > img {
+  margin-left: auto;
+  }
+  .guides-container .guides .guide.hide > img {
+  display: none;
+  }
+  
+  /* Responsiveness */
+  
