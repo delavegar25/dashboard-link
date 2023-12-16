@@ -1000,13 +1000,13 @@ a{
   display: none;
 }
 
-.guides-container .guides .guide .details p a {
+.guide-container .guides .guide .details p a {
   color: #005bd3;
   font-size: 14px;
   text-decoration: none;
   }
 
-  .guides-container .guides .guide .details button {
+  .guide-container .guides .guide .details button {
   all: unset;
   
   padding: 6px 12px;
@@ -1025,33 +1025,33 @@ a{
   cursor: pointer;
   }
 
-  .guides-container .guides .guide .details button:hover {
+  .guide-container .guides .guide .details button:hover {
   background: #2a2a2a;
   }
 
-  .guides-container .guides .guide .details button:active {
+  .guide-container .guides .guide .details button:active {
   background: #2b2b2b;
   box-shadow: 0px 0px 0px 1.5px #333, 0px 3px 0px 0px #000 inset;
   }
 
-  .guides-container .guides .guide .details button:focus {
+  .guide-container .guides .guide .details button:focus {
   background: #404040;
   box-shadow: 0px 0px 0px 2px #005bd3, 0px 0px 0px 3px #fff,
     0px 0px 0px 1.5px #333;
   }
 
-  .guides-container .guides .guide .details button:focus-visible {
+  .guide-container .guides .guide .details button:focus-visible {
   background: #404040;
   box-shadow: 0px 0px 0px 2px #005bd3, 0px 0px 0px 3px #fff,
     0px 0px 0px 1.5px #333;
   }
-  .guides-container .guides .guide.hide .details button {
+  .guide-container .guides .guide.hide .details button {
   display: none;
   }
-  .guides-container .guides .guide > img {
+  .guide-container .guides .guide > img {
   margin-left: auto;
   }
-  .guides-container .guides .guide.hide > img {
+  .guide-container .guides .guide.hide > img {
   display: none;
   }
   
@@ -1076,3 +1076,72 @@ a{
       width: 90%;
     }
   }
+
+  @media only screen and (max-width: 700px){
+
+     .logo-mobile {
+      display: block;
+     }
+
+    .guide-container .guides .guide > img {
+      display: none !important;
+    }
+
+    .guide-container .guides .guide .details {
+      width: fit-content;
+      margin-left: 8px;
+    }
+  }
+
+@media only screen and (max-width: 450px){
+  
+  .logo-mobile{
+    display: block;
+  }
+
+  .search-bar {
+    margin: 0px 8px;
+  }
+
+  .search-bar input {
+    padding-left: 35px;
+  }
+
+  .profile .notification-bell{
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .main-header main,
+  .main-header .guide-container {
+      width: 100%;
+      border-radius: 0px;   
+  }
+
+  .main-header main {
+    position: relative;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+  }
+
+  .main-header main svg {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+
+  .guide-container .guides {
+    height: 400px;
+  }
+
+  .guide-container .guides .guide {
+    padding: 8px 8px 12px 8px;
+    border-radius: 0px;
+  }
+
+  .guide-container .guides .guide > img{
+    display: none !important;
+  }
+
+}
