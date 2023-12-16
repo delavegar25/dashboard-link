@@ -409,6 +409,7 @@ body {
   border: 1px solid #616161;
   position: relative;
   color: #B5B5B5;
+  margin-right: 92px;
 }
 
 .search-bar input {
@@ -526,6 +527,10 @@ a{
   line-height: 130%;
 }
 
+.hidden {
+  display: none;
+}
+
 .alert-menu {
   width: 385px;
   height: 118px;
@@ -563,30 +568,7 @@ a{
   align-items: center;
 }
 
-.notification-sort:focus{
-  background: var(--grey-grey-50, #656266);
-  box-shadow: 0px 0px 0px 3px #005BD3;
-  outline-offset: 1px;
-}
 
-.notification-sort:focus-visible{
-  outline: none;
-  border: 1.5px solid #005bd3;
-  border-radius: 4px;
-}
-
-.alert-menu .head > div svg:last-child:focus{
-  outline: none;
-  border: 1.5px solid #005bd3;
-  border-radius: 4px;
-}
-
-
-.alert-menu .head > div svg:last-child:focus-visible{
-  outline: none;
-  border: 1.5px solid #005bd3;
-  border-radius: 4px;
-}
 
 .alert-menu > div:last-child {
   background: #f1f1f1;
@@ -789,6 +771,7 @@ a{
 
 .main-header main button{
   border-radius: 8px;
+  line-height: 30%;
 }
 
 .main-header main > div a:hover{
@@ -803,6 +786,7 @@ a{
 
 /*guide container */
 .guide-container {
+  margin-left: 270px;
   margin-top: 16px;
   width: 800px;
   padding: 8px;
