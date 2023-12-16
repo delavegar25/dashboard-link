@@ -735,3 +735,57 @@ a{
   font-size: 12px;
   line-height: 130%;
 }
+
+
+/*main select plan section */
+.main-header{
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header main{
+  display: flex;
+  width: 800px;
+  height: fit-content;
+  padding: 12px 8px 12px 16px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background: #1A1A1A;
+}
+
+.main-header main p {
+  color: #e3e3e3;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.main-header main > div{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.main-header > div a {
+  all: unset;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0, 0.1);
+  background: #fff;
+  box-shadow: 0px -1px 0px 0px #B5B5B5 inset;
+  color: #323232;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.main-header main > div a:hover{
+  background: #f7f7f7;
+}
+
+.main-header > div a:focus-visible {
+  box-shadow: 0px 0px 0px 3px #005bd3, 0px 0px 0px 1px #fff,
+  0px -1px 0px 0px #B5B5B5 inset;  
+}
