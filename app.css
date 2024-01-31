@@ -1052,11 +1052,11 @@ nav .modal-triggers .name-section > .name {
 
 @media only screen and (max-width: 450px) {
 nav .logo {
-  display: none;
+  display: block;
 }
 
 nav .logo-mobile {
-  display: block;
+  display: none;
 }
 
 nav .search-bar {

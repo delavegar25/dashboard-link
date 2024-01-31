@@ -35,6 +35,26 @@ dropdownTrigger.addEventListener("keydown", (e) => {
   }
 });
 
+
+function toggleMenu() {
+  let menu = document.querySelector('.dropdown');
+  menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+
+  document.addEventListener('click', outsideClick);
+}
+
+function outsideClick(event) {
+  let menu = document.querySelector('.dropdown');
+  let toggleButton = document.querySelector('.alertModal');
+
+  if(!menu.contains(event.target) && event.target !== toggleButton) {
+    menu.style.display = 'none';
+
+    document.removeEventListener('click', outsideClick)
+  }
+}
+
+
 //Logic to close header
 const header = document.querySelector("header");
 const cancelIcon = document.querySelector(".cancel");
